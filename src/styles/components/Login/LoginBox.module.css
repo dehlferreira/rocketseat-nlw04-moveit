@@ -1,0 +1,72 @@
+.loginBoxContainer > img{
+  position: absolute;
+  width: 22.5rem;
+  height: 4.75rem;
+  left: 51.25rem;
+  top: 12.43rem;
+}
+
+.loginBoxContainer div p {
+  position: absolute;
+  width: 11.93rem;
+  height: 2.87rem;
+  left: 51.25rem;
+  top: 23.18rem;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 46px;
+  
+  color: var(--white);
+}
+
+.loginBoxContainer div img {
+  position: absolute;
+  width: 19.87rem; 
+  height: 3.75rem;
+  left: 51.25rem;
+  top: 27.56rem;
+}
+
+.loginBoxContainer div input {
+  position: absolute;
+  width: 21.25rem;
+  height: 5rem;
+  left: 51.25rem;
+  top: 33.81rem;
+
+  background: linear-gradient(to right, var(--blue-dark) , var(--blue));
+  border: 0;
+  border-top-left-radius : 5px;
+  border-bottom-left-radius : 5px;
+  padding: 2rem; 
+
+  color: var(--text-highlight);
+  font-size: 1.2rem;
+}
+
+.loginBoxContainer div ::-webkit-input-placeholder {
+  color: var(--text-highlight);
+}
+
+.loginBoxContainer div button {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 72.5rem;
+  top: 33.81rem;
+
+  background: var(--blue-dark);
+  border: 0;
+  border-top-right-radius : 5px;
+  border-bottom-right-radius : 5px;
+  color: var(--white);
+
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
