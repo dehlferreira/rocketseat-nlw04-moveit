@@ -1,12 +1,12 @@
 import { signIn, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useEffect } from 'react';
+
 import { FaGithub } from 'react-icons/fa';
 import styles from '../../styles/components/Login/LoginBox.module.css';
 
 export function LoginBox() {
-  const [session, loading] = useSession();
+  const [session] = useSession();
   const router = useRouter();
   
   useEffect(() => {
@@ -16,16 +16,6 @@ export function LoginBox() {
       router.push('/')
     }
   }, [session])
-
-  useEffect(() => {
-    loadApiData();
-  }, [])
-
-  async function loadApiData() {
-    const response = await axios.get(`http://api.github.com/users/dehlferreira`);
-
-    console.log(response.data.login)
-  }
 
   return (
     <div className={styles.loginBoxContainer}>
