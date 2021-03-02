@@ -6,7 +6,6 @@ import { FaGithub } from 'react-icons/fa';
 import styles from '../../styles/components/Login/LoginBox.module.css';
 
 export function LoginBox() {
-  const [inputValue, setInputValue] = useState();
   const [session, loading] = useSession();
   const router = useRouter();
   
@@ -18,13 +17,15 @@ export function LoginBox() {
     }
   }, [session])
 
-  //corrigir esse erro
-  useEffect(async () => {
+  useEffect(() => {
+    loadApiData();
+  }, [])
+
+  async function loadApiData() {
     const response = await axios.get(`http://api.github.com/users/dehlferreira`);
 
     console.log(response.data.login)
-
-  }, [])
+  }
 
   return (
     <div className={styles.loginBoxContainer}>
