@@ -30,43 +30,30 @@
   top: 27.56rem;
 }
 
-.loginBoxContainer div input {
-  position: absolute;
-  width: 21.25rem;
-  height: 5rem;
-  left: 51.25rem;
-  top: 33.81rem;
-
-  background: linear-gradient(to right, var(--blue-dark) , var(--blue));
-  border: 0;
-  border-top-left-radius : 5px;
-  border-bottom-left-radius : 5px;
-  padding: 2rem; 
-
-  color: var(--text-highlight);
-  font-size: 1.2rem;
-}
-
 .loginBoxContainer div ::-webkit-input-placeholder {
   color: var(--text-highlight);
 }
 
 .loginBoxContainer div button {
   position: absolute;
-  width: 5rem;
+  width: 21.25rem;
   height: 5rem;
-  left: 72.5rem;
+  left: 51.25rem;
   top: 33.81rem;
 
   background: var(--blue-dark);
   border: 0;
-  border-top-right-radius : 5px;
-  border-bottom-right-radius : 5px;
-  color: var(--white);
+  border-radius : 5px;
+  padding: 2rem; 
 
-  font-size: 2rem;
+  color: var(--text-highlight);
+  font-size: 1.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.loginBoxContainer div button div{
+  margin-right: 1.2rem;
 }
