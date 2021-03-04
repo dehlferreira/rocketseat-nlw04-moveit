@@ -63,7 +63,7 @@ export default function Home(props: HomeProps) {
           </div>
         </ChallengesProvider>
       ) : (
-        <h1>Efetuar Login</h1>
+        <h1>Logado</h1>
       )}
     </>
   )
