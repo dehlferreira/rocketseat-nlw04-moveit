@@ -1,8 +1,7 @@
-import { useState, useEffect, useContext } from 'react';
-import { ChallengesContext } from '../contexts/ChallengesContext';
-import { CountdownContext } from '../contexts/CountdownContext';
-import styles from '../styles/components/Countdown.module.css';
-
+import { signOut } from 'next-auth/client';
+import { useContext } from 'react';
+import { CountdownContext } from '../../contexts/Home/CountdownContext';
+import styles from '../../styles/components/Home/Countdown.module.css';
 
 export function Countdown() {
   const { 
@@ -11,13 +10,11 @@ export function Countdown() {
     hasFinished, 
     isActive, 
     startCountdown, 
-    resetCountdown 
+    resetCountdown,
   } = useContext(CountdownContext);
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
-
-  
 
   return (
     <div>
@@ -51,13 +48,22 @@ export function Countdown() {
               Abandonar ciclo
             </button>
           ) : (
-            <button 
-            type="button" 
-            className={styles.countdownButton}
-            onClick={startCountdown}
-          >
-            Iniciar um ciclo
-          </button>
+            <>
+              <button 
+                type="button" 
+                className={styles.countdownButton}
+                onClick={startCountdown}
+              >
+                Iniciar um ciclo
+              </button>
+              <button 
+                type="button" 
+                className={styles.countdownButton}
+                onClick={() => signOut()}
+              >
+                signOut
+              </button>
+            </>
           )}
         </>
       )}

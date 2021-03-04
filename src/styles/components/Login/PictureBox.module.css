@@ -1,0 +1,7 @@
+.pictureBoxContainer img{
+  position: absolute;
+  width: 48rem;
+  height: 41.25rem;
+  left: -4.25rem;
+  top: 5rem;
+}
