@@ -7,6 +7,7 @@ import { CompletedChallenges } from "../components/Home/CompletedChallenges";
 import { Countdown } from "../components/Home/Countdown";
 import { ExperienceBar } from "../components/Home/ExperienceBar";
 import { Profile } from "../components/Home/Profile";
+import { Logoff } from '../components/Home/Logoff';
 
 
 import styles from '../styles/pages/Home.module.css';
@@ -63,7 +64,7 @@ export default function Home(props: HomeProps) {
           </div>
         </ChallengesProvider>
       ) : (
-        <h1>Logado</h1>
+        <Logoff />
       )}
     </>
   )
