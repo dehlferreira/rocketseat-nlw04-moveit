@@ -41,21 +41,15 @@ O move.it é um app que une a técnica de Pomodoro com a realização de exercí
 
 Caso queira acompanhar como foi a evolução durante a semana, segue abaixo os links para as branchs criadas conforme as aulas foram sendo liberadas durante a NLW:
 
-- [1º Dia - feat/first-day](https://github.com/dehlferreira/rocketseat-nlw-together-gameplay/tree/feat/first-day)
-- [2º Dia - feat/second-day](https://github.com/dehlferreira/rocketseat-nlw-together-gameplay/tree/feat/second-day)
-- [3º Dia - feat/third-day](https://github.com/dehlferreira/rocketseat-nlw-together-gameplay/tree/feat/third-day)
-- [4º Dia - feat/fourth-day](https://github.com/dehlferreira/rocketseat-nlw-together-gameplay/tree/feat/fourth-day)
-- [5º Dia - feat/fifth-day](https://github.com/dehlferreira/rocketseat-nlw-together-gameplay/tree/feat/fifth-day)
+- [1º Dia - feat/first-day](https://github.com/dehlferreira/rocketseat-nlw04-moveit/tree/feat/first-day)
+- [2º Dia - feat/second-day](https://github.com/dehlferreira/rocketseat-nlw04-moveit/tree/feat/second-day)
+- [3º Dia - feat/third-day](https://github.com/dehlferreira/rocketseat-nlw04-moveit/tree/feat/third-day)
+- [4º Dia - feat/fourth-day](https://github.com/dehlferreira/rocketseat-nlw04-moveit/tree/feat/fourth-day)
+- [5º Dia - feat/fifth-day](https://github.com/dehlferreira/rocketseat-nlw04-moveit/tree/feat/fifth-day)
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-React
-Next.js
-TypeScript
 
 - [React](https://pt-br.reactjs.org/docs/getting-started.html)
 - [Next.js](https://nextjs.org/docs/getting-started)
